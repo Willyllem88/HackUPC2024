@@ -183,7 +183,7 @@ int main(int argc, char * argv[]) {
         error_exit("Error closing server");
 
     clearDataDB();
-
+    //Starting the server
     while (1) {
         int connectionfd = accept(serverfd, (struct sockaddr*)&address, (socklen_t*)&addrlen);
         if (connectionfd < 0)
